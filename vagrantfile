@@ -85,6 +85,7 @@ Vagrant.configure("2") do |config|
   # Installer ansible 
     sudo dnf install -y epel-release
     sudo dnf install -y ansible
+    sudo dnf install sshpass
 
   # Générer les clé ssh EN TANT QU'ANSIBLE !!!
     sudo -u ansible ssh-keygen -t rsa -N "" -f /home/ansible/.ssh/id_rsa
